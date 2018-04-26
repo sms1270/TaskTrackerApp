@@ -48,18 +48,20 @@ public class array_lists {
 			int m = num2.length;
 			int x;
 			int y;
+			ArrayList common_numbers = new ArrayList();
 			for (x = 0; x < l; x += 1) {
 				System.out.println("The number is " + numbers[x] + " and the location is " + x);
 				for (y = 0; y < m; y += 1) {
 					if (numbers[x] == num2[y]) {
-						System.out.println("The common number is " + numbers[x]);
-						
+						common_numbers.add(numbers[x]);
+								
 					}
 				}
 				
 			}
 			System.out.println();
 			System.out.println();
+			System.out.println("The list is " + common_numbers);
 			return 0;
 		}
 		
