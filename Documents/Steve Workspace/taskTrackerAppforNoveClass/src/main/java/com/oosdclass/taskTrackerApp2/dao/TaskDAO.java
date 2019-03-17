@@ -11,7 +11,7 @@ public interface TaskDAO {
 	public List<Task> retrieveAllTasks();
 
 	public Task retrieveByTaskID(int taskID);
-
+	
 	public Task insert(Task addTaskFormObject);
 	
 	public Task update(Task assignTaskFormObject);

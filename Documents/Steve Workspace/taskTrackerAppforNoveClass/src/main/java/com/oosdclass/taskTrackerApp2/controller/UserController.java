@@ -44,15 +44,14 @@ public class UserController {
 			if(userService.isUserValid(userLoginFormObject)) {
 				System.out.println("user is valid");
 				model = new ModelAndView("redirect:/adminTasks");
-				
-			}
-			//else keep them on home page and send an error to display
-			//on page to the user
-			else {
-				model = new ModelAndView("home");
-				model.addObject("error", "Username does not exist");
-				
-			}
+			} 
+			
+//			else {
+//				//else keep them on home page and send an error to display
+//				//on page to the user
+//				model = new ModelAndView("home");
+//				model.addObject("error", "Username does not exist");
+//			}
 			
 			return model;
 		}

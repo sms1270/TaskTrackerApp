@@ -75,8 +75,11 @@ public class TaskController {
 	@RequestMapping(value = "/assignTask", method = RequestMethod.POST)
 	public ModelAndView assignTask(Task assignTaskFormObject) {
 //		ModelAndView model = null;
-		taskService.insertTask(assignTaskFormObject);
-		System.out.println("added: " + assignTaskFormObject);
+		
+//		if (User.getUsername == "admin") {
+//			taskService.insertTask(assignTaskFormObject);
+//			System.out.println("added: " + assignTaskFormObject);
+//		} else 
 		
 		ModelAndView model = new ModelAndView("redirect:/adminTasks");
 		return model;
